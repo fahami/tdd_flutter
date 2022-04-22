@@ -44,7 +44,7 @@ void main() {
   });
 
   group('get concrete number trivia', () {
-    final tNumber = 1;
+    const tNumber = 1;
     final tNumberTriviaModel = NumberTriviaModel(number: tNumber, text: 'test');
     final NumberTrivia tnumberTrivia = tNumberTriviaModel;
 

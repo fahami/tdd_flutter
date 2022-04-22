@@ -9,9 +9,7 @@ import 'package:tdd_clean/features/number_trivia/data/datasources/number_trivia_
 import 'package:tdd_clean/features/number_trivia/data/models/number_trivia_model.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
-import 'number_trivia_local_datasource_impl.mocks.dart';
-
-// class MockSharedPreferences extends Mock implements SharedPreferences {}
+import 'number_trivia_local_datasource.mocks.dart';
 
 @GenerateMocks([SharedPreferences])
 void main() {

@@ -21,13 +21,13 @@ void main() {
     usecase = GetConcreteNumberTrivia(mockNumberTriviaRepository);
   });
 
-  final tNumber = 1;
+  const tNumber = 1;
   final tNumberTrivia = NumberTrivia(number: 1, text: 'test');
 
   test('should get trivia number from repository', () async {
     when(mockNumberTriviaRepository.getConcreteNumberTrivia(any))
         .thenAnswer((_) async => Right(tNumberTrivia));
-    final result = await usecase(Params(number: tNumber));
+    final result = await usecase(const Params(number: tNumber));
 
     expect(result, Right(tNumberTrivia));
 
